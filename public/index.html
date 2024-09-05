@@ -1,89 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" href="../src/index.css">
-    <title>todoApp</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>React App</title>
+    <link rel="stylesheet" href="%PUBLIC_URL%/index.css" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <section class="todoapp">
-      <header class="header">
-        <h1>todos</h1>
-        <form>
-          <input class="new-todo" placeholder="What needs to be done?" autoFocus />
-        </form>
-      </header>
-      
-      <section class="main">
-        <input class="toggle-all" type="checkbox" />
-        <label for="toggle-all">
-          Mark all as complete
-        </label>
-    
-        <ul class="todo-list">
-          <li class="completed">
-            <div class="view">
-              <input class="toggle" type="checkbox" />
-              <label>Learn JavaScript</label>
-              <button class="destroy"></button>
-            </div>
-          </li>
-          <li>
-            <div class="view">
-              <input class="toggle" type="checkbox" />
-              <label>Learn React</label>
-              <button class="destroy"></button>
-            </div>
-          </li>
-          <li>
-            <div class="view">
-              <input class="toggle" type="checkbox" />
-              <label>Have a life!</label>
-              <button class="destroy"></button>
-            </div>
-          </li>
-        </ul>
-      </section>
-    
-      <footer class="footer">
-        <span class="todo-count">
-          <strong>2</strong>
-          items left
-        </span>
-    
-        <ul class="filters">
-          <li>
-            <a href="#/" class="selected">All</a>
-          </li>
-          <li>
-            <a href="#/">Active</a>
-          </li>
-          <li>
-            <a href="#/">Completed</a>
-          </li>
-        </ul>
-    
-        <button class="clear-completed">
-          Clear completed
-        </button>
-      </footer>
-    </section>
-    
-    <footer class="info">
-      <p>Click to edit a todo</p>
-      <p>Created by <a href="https://d12n.me/">Dmitry Sharabin</a></p>
-      <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
-    </footer>
+    <div id="root"></div> <!-- React buraya mount edilir -->
   </body>
 </html>
