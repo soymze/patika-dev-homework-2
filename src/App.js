@@ -16,11 +16,14 @@ function App() {
     setTodos([newTodo, ...todos]);
   };
 
+  const deleteTask = (index) => {
+    setTodos(todos.filter((_, i) => i !== index));
+  };
 
   return (
     <div className="App">
       <Header onAddTodo={addTodo} />
-      <Main todos={todos} />
+      <Main todos={todos} onDeleteTodo={deleteTask} />
       <Footer />
       <Info />
     </div>
