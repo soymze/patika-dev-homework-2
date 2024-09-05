@@ -1,8 +1,7 @@
+// src/App.js
 import React, { useState } from 'react';
 import Header from './components/header';
 import Main from './components/main';
-import Footer from './components/footer';
-import Info from './components/info';
 import './App.css';
 
 function App() {
@@ -20,12 +19,18 @@ function App() {
     setTodos(todos.filter((_, i) => i !== index));
   };
 
+  const updateTodo = (index, updatedTodo) => {
+    setTodos(todos.map((todo, i) => (i === index ? updatedTodo : todo)));
+  };
+
   return (
-    <div className="App">
+    <div className="todoapp">
       <Header onAddTodo={addTodo} />
-      <Main todos={todos} onDeleteTodo={deleteTask} />
-      <Footer />
-      <Info />
+      <Main
+        todos={todos}
+        onDeleteTodo={deleteTask}
+        onUpdateTodo={updateTodo}
+      />
     </div>
   );
 }
